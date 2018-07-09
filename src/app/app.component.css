@@ -1,0 +1,62 @@
+.main-menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+}
+
+.main-menu li {
+    float: left;
+    border-right: 1px solid #bbb;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #333;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-image {
+    padding-left: 3px;
+    width: 10px;
+    height: 10px;
+    content: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAQAAAC1+jfqAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QAAKqNIzIAAAAJcEhZcwAADdcAAA3XAUIom3gAAAAHdElNRQfhCxQTNx+6CCO2AAAAdUlEQVQoz6WRKw6AMBBEBwUk3APTQ3ANHJIbIXG9EIZ7NGlwD0MItGUNY98mOx/pryoGNQY/xIylWRL+E3tJEh17Ee901yMcMcMR9/DClB1MiV3WF16zPLRsN95oC5HpCQAE+o9WGAEYjeJYWMzmqal/z5foBIPIsZ9b4KXAAAAAJXRFWHRkYXRlOmNyZWF0ZQAyMDE3LTExLTIwVDE5OjU1OjMxKzAxOjAwZLmt/AAAACV0RVh0ZGF0ZTptb2RpZnkAMjAxNy0xMS0yMFQxOTo1NTozMSswMTowMBXkFUAAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwaAAAAAElFTkSuQmCC')
+}
+
+.dropdown-content a {
+    border-bottom: 1px solid #bbb;
+}
+
+.main-menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.main-menu li a:hover {
+    background-color: red;
+}
+
+.page-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: #333;
+    padding: 14px 16px;
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 100%;
+}
+

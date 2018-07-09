@@ -1,0 +1,15 @@
+<div class="login-container">
+   <div> 
+    <label>Username</label>
+    <input type="text" placeholder="Enter Username" required #usernameInput>
+    <label>Password</label>
+    <input type="password" placeholder="Enter Password" required #passwordInput>
+    <button type="button" (click)="login(usernameInput.value, passwordInput.value);">Login</button>
+</div>
+<div class="login-footer">
+    <button type="button" class="cancel-login">Cancel</button>
+    <span class="register-login">
+        Forgot <a href="#">password?</a>
+    </span> 
+</div>
+</div>

@@ -1,0 +1,43 @@
+<div class="search-container" scrollTracker (endReachedEmitter)="endReached($event)">
+    <div class="search-item">
+        <label>Move in</label>
+        <input (input)="parseMoveInDate($event.target.value)" type="date" placeholder="Moving in" required>
+    </div>
+    <div class="search-item">
+        <label>Move out</label>
+        <input (input)="parseMoveOutDate($event.target.value)" type="date" placeholder="Moving out" required>
+    </div>
+        <div class="search-item">
+        <label>Number of people</label>
+        <select (input)="parseNumOfPeople($event.target.value)">
+            <option value="Doesn't matter" selected>Doesn't matter</option>
+            <option value="1 person">1 person</option>
+            <option value="2 persons">2 persons</option>
+            <option value="3 persons">3 persons</option>
+        </select>
+        </div>
+        <div class="search-item">
+        <label>City</label>
+        <select (input)="parseCity($event.target.value)">
+            <option value="Prague" selected>Prague</option>
+            <option value="Budapest">Budapest</option>
+            <option value="Bratislava">Bratislava</option>
+            <option value="Vienna">Vienna</option>
+            <option value="Berlin">Berlin</option>
+        </select>
+        </div>
+        <div *ngFor="let item of searchItems" class="images">
+            <div id="{{item.id}}" (click)="loadItem($event)" class="capture-block">
+                {{item.city}}, {{item.street}}, {{item.houseNumber}}
+                <div class="image-block">
+                    <img src="{{item.imageUrl}}" width="100%">
+                    <div class="price-block">
+                        {{item.price}}
+                    </div>
+                </div>
+            </div>
+        </div>
+</div>
+
+
+

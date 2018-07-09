@@ -1,0 +1,21 @@
+<div class="main-page">
+  <div class="page-header">
+    <ul class="main-menu">
+      <li><a (click)="gotoSearch()">Find in</a></li>
+      <li><a (click)="gotoLogin()">Sign in</a></li>
+      <li (mouseover)="toggleMenu($event)" (mouseout)="toggleMenu($event)">
+    <a >Menu<img class="dropdown-image" /></a>
+    <div [style.display]="dropdownlist" class="dropdown-content">
+      <a >Link 1</a>
+      <a >Link 2</a>
+      <a >Link 3</a>
+    </div></li>
+    </ul>
+  </div>
+  <div class="page-content">
+    <router-outlet></router-outlet>
+  </div>
+  <div class="page-footer">
+    Apartments Rental
+  </div>
+</div>

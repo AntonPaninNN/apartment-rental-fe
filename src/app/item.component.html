@@ -1,0 +1,22 @@
+<div class="item-container">
+    <div class="images-block">
+        <img src="{{currentItem.imageUrl}}" class="image-back">
+    </div>
+    <div class="capture-block">
+        {{currentItem.city}}, {{currentItem.street}}, {{currentItem.houseNumber}}
+    </div>
+    <div class="description-block">
+        <p>{{currentItem.description}}</p>
+    </div>
+    <div class="reservation-block">
+    <div class="date-item">
+        <label>Move in</label>
+        <input type="date" placeholder="Moving in" required>
+    </div>
+    <div class="date-item">
+        <label>Move out</label>
+        <input type="date" placeholder="Moving out" required>
+    </div>
+    <button type="button">Reserve</button>
+    </div>
+</div>
