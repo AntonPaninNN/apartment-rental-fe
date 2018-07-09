@@ -1,7 +1,8 @@
-# Simple project for renting apartments. Frontend part.
+## Simple project for renting apartments. Frontend part.
 
 ### Used technologies:
 * Angular 5
+* TypeScript
 
 ### Development server
 
